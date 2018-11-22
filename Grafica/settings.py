@@ -49,6 +49,7 @@ INSTALLED_APPS = [
 
     'login',
     'Profile',
+    'Test1',
 ]
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
