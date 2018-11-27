@@ -46,4 +46,5 @@ class Test1Detail(APIView):
             serializer.save()
             datas = serializer.data
             return Response(datas)
+        return Response ("Error")
 
