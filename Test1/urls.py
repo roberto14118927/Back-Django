@@ -5,5 +5,6 @@ from rest_framework import routers, serializers, viewsets
 from Test1 import views
 
 urlpatterns = [
-    re_path('test1/', views.Test1List.as_view())
+    re_path(r'^test1/$', views.Test1List.as_view()),
+    re_path(r'^test1/(?P<pk>\d+)$', views.Test1Detail.as_view()),
 ]

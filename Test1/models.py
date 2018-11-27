@@ -5,6 +5,7 @@ class testModel(models.Model):
     testName = models.CharField(max_length=255, null=True)
     testPate = models.CharField(max_length=255, null=True)
     testMate = models.CharField(max_length=255, null=True)
+    delete = models.BooleanField(default = False)
     def __str__(self):
         return self.testName
 
